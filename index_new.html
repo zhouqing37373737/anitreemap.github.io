@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="anitreemap.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<style type="text/css">
+	.bs-callout-danger {
+		border-left-color: #ce4844;
+	}
+
+</style>
+</head>
+<body>
+<div class="bs-callout bs-callout-danger" id="callout-glyphicons-empty-only">
+    <h4>Only for use on empty elements</h4>
+    <p>Icon classes should only be used on elements that contain no text content and have no child elements.</p>
+  </div>
+
+	<div id="container"></div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="anitreemap.js"></script>
+<script type="text/javascript">
+var input={'nice':2,'haha':1,'ff':1,'nicDe':2,'niEce':2,'nicet':3,'hahi':3,'ffj':1,'nicDek':1,'nuiEce':1,'ll':6,'pp':9};
+    var tmap=new Anitreemap(input,'container',600,250,function(){
+    	console.log("user_defined function");
+    });
+    tmap.setdiv();
+    tmap.animate();
+</script>
+
+</html>

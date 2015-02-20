@@ -1,0 +1,43 @@
+
+/* ========================================================================
+ * anitreemap.css v1.0.0
+ * animated tree map display 
+ *
+ * ========================================================================
+ * Author:qingzhou
+ * clearfix code from Nicolas Gallagher
+ *
+ * Licensed under MIT
+ * ======================================================================== */
+
+.clearfix:before,
+.clearfix:after {
+  content:"";
+  display:table;
+}
+.clearfix:after {
+  clear:both;
+}
+.clearfix {
+  zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+#container{
+  display: inline-block;
+}
+#treemapwrapper{
+    position: relative;
+}
+#treemapwrapper div{
+    display:block;
+    float: left;
+    text-align: center;
+    cursor:pointer;
+}
+#anitreemapreturn{
+	background-color: rgb(255, 215, 0);
+	text-align: center;
+	border-bottom: solid gray 1px;
+}
+#anitreemapreturn:hover{
+	 box-shadow:inset 3px 3px 3px rgba(20%,20%,40%,0.5);
+}
